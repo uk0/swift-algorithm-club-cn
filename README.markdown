@@ -161,38 +161,38 @@
 
 ### 集合
 
-- [Bloom Filter](Bloom Filter/). A constant-memory data structure that probabilistically tests whether an element is in a set.
-- [Hash Set](Hash Set/). A set implemented using a hash table.
-- Multiset
-- [Ordered Set](Ordered Set/). A set where the order of items matters.
+- [布隆过滤器](Bloom Filter/)－一个常量内存数据结构，用于概率性的检测某个元素是否在集合中。
+- [哈希集合](Hash Set/)－使用哈希表实现的集合。
+- 多重集
+- [有序集](Ordered Set/)－很看重元素顺序的集合。
 
-### Graphs
+### 图
 
-- [Graph](Graph/)
-- [Breadth-First Search (BFS)](Breadth-First Search/)
-- [Depth-First Search (DFS)](Depth-First Search/)
-- [Shortest Path](Shortest Path %28Unweighted%29/) on an unweighted tree
-- [Minimum Spanning Tree](Minimum Spanning Tree %28Unweighted%29/) on an unweighted tree
-- [All-Pairs Shortest Paths](All-Pairs Shortest Paths/)
+- [图](Graph/)
+- [广度优先搜索(BFS)](Breadth-First Search/)
+- [深度优先搜索(DFS)](Depth-First Search/)
+- [最短路径算法](Shortest Path %28Unweighted%29/)－作用对象为无权值树。
+- [最小生成树](Minimum Spanning Tree %28Unweighted%29/)－作用对象为无权值树。
+- [任意两点间的最短路径算法](All-Pairs Shortest Paths/)
 
-## Puzzles
+## 智力题
 
-A lot of software developer interview questions consist of algorithmic puzzles. Here is a small selection of fun ones. For more puzzles (with answers), see [here](http://elementsofprogramminginterviews.com/) and [here](http://www.crackingthecodinginterview.com).
+很多程序员在面试时都会被问到一些算法性质的智力题。这里只囊括了一点比较有趣的。想了解更多的智力题（及答案），请浏览[这里](http://elementsofprogramminginterviews.com/)，还有[这里](http://www.crackingthecodinginterview.com)。
 
-- [Two-Sum Problem](Two-Sum Problem/)
+- [二和问题](Two-Sum Problem/)
 - [Fizz Buzz](Fizz Buzz/)
-- [Monty Hall Problem](Monty Hall Problem/)
+- [蒙提霍尔问题](Monty Hall Problem/)
 
-## Learn more!
+## 学无止境！
 
-For more information, check out these great books:
+请参阅以下书籍获取更多内容：
 
 - [Introduction to Algorithms](https://mitpress.mit.edu/books/introduction-algorithms) by Cormen, Leiserson, Rivest, Stein
 - [The Algorithm Design Manual](http://www.algorist.com) by Skiena
 - [Elements of Programming Interviews](http://elementsofprogramminginterviews.com) by Aziz, Lee, Prakash
 - [Algorithms](http://www.cs.princeton.edu/~rs/) by Sedgewick
 
-The following books are available for free online:
+下面的书籍均可在网上**免费**阅读：
 
 - [Algorithms](http://www.beust.com/algorithms.pdf) by Dasgupta, Papadimitriou, Vazirani
 - [Algorithms, Etc.](http://jeffe.cs.illinois.edu/teaching/algorithms/) by Erickson
@@ -200,15 +200,13 @@ The following books are available for free online:
 - Algorithms and Data Structures: The Basic Toolbox by Mehlhorn and Sanders
 - [Wikibooks: Algorithms and Implementations](https://en.wikibooks.org/wiki/Algorithm_Implementation)
 
-Other algorithm repositories:
+其它关于算法的资源：
 
-- [EKAlgorithms](https://github.com/EvgenyKarkan/EKAlgorithms). A great collection of algorithms in Objective-C.
-- [@lorentey](https://github.com/lorentey/). Production-quality Swift implementations of common algorithms and data structures.
-- [Rosetta Code](http://rosettacode.org). Implementations in pretty much any language you can think of.
-- [AlgorithmVisualizer](http://jasonpark.me/AlgorithmVisualizer/). Visualize algorithms on your browser.
+- [EKAlgorithms](https://github.com/EvgenyKarkan/EKAlgorithms)－非常棒的使用 Objective-C 编写的算法集合。
+- [@lorentey](https://github.com/lorentey/)－使用 Swift 实现的产品级质量的常用算法和数据结构实现。
+- [Rosetta Code](http://rosettacode.org)－提供了很多中语言的算法实现。
+- [AlgorithmVisualizer](http://jasonpark.me/AlgorithmVisualizer/)－在浏览器中的图形化算法演示。
 
-## License
+## 许可(License)
 
-All content is licensed under the terms of the MIT open source license.
-
-[![Build Status](https://travis-ci.org/raywenderlich/swift-algorithm-club.svg?branch=master)](https://travis-ci.org/raywenderlich/swift-algorithm-club)
+本项目(包括原项目)都是基于 MIT 协议的，请随意使用！
