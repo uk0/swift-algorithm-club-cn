@@ -112,20 +112,18 @@
 
 首先，你的数据是具有某种形态的，并且有一些必要的操作方法。如果你想基于关键字来查找对象，需要的是字典类型的数据结构；如果你的数据原生就是分层级的，就需要某种类型的树形结构；而如果你的数据是线性的，则你需要的是数据结构可能就是栈或队列等。
 
-Second, it matters what particular operations you'll be performing most, as certain data structures are optimized for certain actions. For example, if you often need to find the most important object in a collection, then a heap or priority queue is more optimal than a plain array.
+其次，具体的选择还与你在实际使用中最常用的操作方法有关，因为不同的数据结构都对不同的操作方法做了优化。举例来说，如果你经常需要获取集合中的某些较为重要的元素，那么使用堆或优先队列就比普通的数组要好很多。
 
+绝大多数情况下，使用 Swift 内建的 `Array`、`Dictinary`、`Set` 就足够高效了，但某些时候，可能还是需要某些更合适的数据结构...
 
+### 数组变体
 
-Most of the time using just the built-in `Array`, `Dictionary`, and `Set` types is sufficient, but sometimes you may want something more fancy...
+- [二维数组](Array2D/)。固定尺寸的二维数组，可用于棋盘游戏。
+- [比特集](Bit Set/)。**n** 位大小固定尺度的序列。
+- [固定长度数组](Fixed Size Array/)。如果你确切的知道数据的大小，使用老式的固定长度的数组会更加高效。
+- [有序数组](Ordered Array/)。一个永远有序的数组。
 
-### Variations on arrays
-
-- [Array2D](Array2D/). A two-dimensional array with fixed dimensions. Useful for board games.
-- [Bit Set](Bit Set/). A fixed-size sequence of *n* bits.
-- [Fixed Size Array](Fixed Size Array/). When you know beforehand how large your data will be, it might be more efficient to use an old-fashioned array with a fixed size.
-- [Ordered Array](Ordered Array/). An array that is always sorted.
-
-### Queues
+### 队列
 
 - [Stack](Stack/). Last-in, first-out!
 - [Queue](Queue/). First-in, first-out!
