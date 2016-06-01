@@ -1,46 +1,19 @@
-# How to contribute
+# 怎样参与到本项目？
 
-Want to help out with the Swift Algorithm Club? Great!
+> 注：下面主要介绍如何参与翻译，如果你需要知道怎样提交一个新的算法，请去左转原项目阅读他们的[要求](https://github.com/raywenderlich/swift-algorithm-club/blob/master/How%20to%20Contribute.markdown)。
 
-## What sort of things can you contribute?
+你可以通过以下方式参与进来：
 
-Take a look at the [list](README.markdown). Any algorithms or data structures that don't have a link yet are up for grabs.
+- 帮忙翻译未翻译的文档。在 README 中的链接前面有一个 `*` 符号的都是未翻译的文档，你可以挑选一篇进行翻译。在翻译完成后提交 Pull Request 即可。
+- 帮忙校对已翻译的文档。包括词不达意的地方、错别字、格式错误等等。
+- 帮忙分享，让更多的人知道。
 
-Things marked with :construction: need work.
+下面说一下对于翻译的要求：
 
-New algorithms and data structures are always welcome (even if they aren't on the list).
-
-We're always interested in improvements to existing implementations and better explanations. Suggestions for making the code more Swift-like or to make it fit better with the standard library.
-
-Unit tests. Fixes for typos. No contribution is too small. :-)
-
-## Please follow this process
-
-To keep this a high quality repo, please follow this process when submitting your contribution:
-
-1. Create a pull request to "claim" an algorithm or data structure. Just so multiple people don't work on the same thing.
-2. Use this [style guide](https://github.com/raywenderlich/swift-style-guide) for writing code (more or less).
-3. Write an explanation of how the algorithm works. Include **plenty of examples** for readers to follow along. Pictures are good. Take a look at [the explanation of quicksort](Quicksort/) to get an idea.
-4. Include your name in the explanation, something like *Written by Your Name* at the end of the document. If you wrote it, you deserve the credit and fame.
-5. Add a playground and/or unit tests.
-
-Just so you know, I will probably edit your text and code for grammar etc, just to ensure a certain level of polish.
-
-For the unit tests:
-
-- Add the unit test project to `.travis.yml` so they it be run on [Travis-CI](https://travis-ci.org/hollance/swift-algorithm-club). Add a line to `.travis.yml` like this:
-
-```
-- xcodebuild test -project ./Algorithm/Tests/Tests.xcodeproj -scheme Tests
-```
-
-- Configure the Test project's scheme to run on Travis-CI:
-    - Open **Product -> Scheme -> Manage Schemes...**
-    - Uncheck **Autocreate schemes**
-    - Check **Shared**
-
-![Screenshot of scheme settings](Images/scheme-settings-for-travis.png)
-
-## Want to chat?
-
-This isn't just a repo with a bunch of code... If you want to learn more about how an algorithm works or want to discuss better ways of solving problems, then open a [Github issue](https://github.com/hollance/swift-algorithm-club/issues) and we'll talk!
+- 忠于原文但也不要太死板，注意语句通顺，不要有浓重的翻译腔。
+- 不要保留原文，一句原文一句翻译很影响阅读，而且也没什么意义。
+- 除非必要，不要在括号中加上英文原文，例如：`矩阵乘法（matrix multiplication）`这样的翻译就是很不必要的，因为`矩阵乘法`这个短语并不会造成任何误解。
+- 不要混用中英文标点符号，译文统一使用中文标点。
+- 不要随意换行，每行作为一个段落为佳(具体分段保持与原文一致)，段落开头不需要空两格，段落之间需要有一个空行。
+- 汉字与英文、汉字与数字之间请加一个空格。例如：`第3个`是错误的，应为`第 3 个`。
+- 提交之前请自己先读几遍校对一下，偶尔有个错别字没关系，这是在所难免的，但不要有太大的问题（尤其是**格式问题**）。
