@@ -13,8 +13,6 @@
 
 这张食谱由一系列的步骤组成，你只需一步接一步按照指令来就可以了。算法也是如此，只不过它的指令是交给计算机去执行的，而不是厨师。
 
-The ingredients -- flour, milk, eggs, butter -- are the data that the algorithm works on. The data goes into the algorithm in one form (raw, separate ingredients) and comes out in another (delicious pancakes!).
+这些原料(面粉、牛奶、鸡蛋、黄油等)相当于算法中的待处理数据。这些原始数据(各种不同的原料)作为算法的输入，输出的数据(好吃的薄饼)即是结果。
 
-
-
-So what are the data structures? They are the containers that hold the data while the algorithm works on it. In the pancake recipe, the data structures are the bag that holds the flour, the mixing bowl where you combine everything, the frying pan that browns the pancake, and finally the plate used to serve the finished pancake.
+那数据结构是什么呢？数据结构用于持有算法需要处理的数据。例如在薄饼食谱中，数据结构对应于用来装面粉的袋子、用于搅拌原料的碗、用于烹饪的平底锅以及最终用于盛烤好的薄饼的盘子。
