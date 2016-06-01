@@ -1,51 +1,55 @@
-# Welcome to the Swift Algorithm Club!
+# 欢迎来到 Swift 算法俱乐部！
 
-Here you'll find implementations of popular algorithms and data structures in everyone's favorite new language Swift, with detailed explanations of how they work.
+在这里，你可以找到很多流行的算法和数据结构的具体实现，使用的是大家最喜欢的新语言 Swift，并对他们的工作原理配有详细的解释。
 
-If you're a computer science student who needs to learn this stuff for exams -- or if you're a self-taught programmer who wants to brush up on the theory behind your craft -- you've come to the right place!
+如果你是一个计算机学院的学生，为了考试想学习一下算法；又或者你是一个自学成才的程序员，想提高一下自身的理论姿势水平，你真 TM 来对地方了！
 
-The goal of this project is to **explain how algorithms work**. The focus is on clarity and readability of the code, not on making a reusable library that you can drop into your own projects. That said, most of the code should be ready for production use but you may need to tweak it to fit into your own codebase.
+这个项目的目的是**解释各种算法的工作方式**。所以我们主要关注代码的清晰性和可读性，而不是为了产出一个可复用的库，让读者可以直接拖进自己的工程使用。换句话说，绝大多数的代码都是可以用于实际的项目中的，不过需要你根据自己的项目需求进行一些修整。
 
-All code is compatible with **Xcode 7.3** and **Swift 2.2**. We'll keep this updated with the latest version of Swift.
+所有的代码都是兼容 **Xcode 7.3** 以及 **Swift 2.2** 的。如果 Swift 有更新，我们也会及时跟进。
 
-This is a work in progress. More algorithms will be added soon. :-) 
+这个项目目前正在进行中。更多的算法将被加入，敬请期待。:-)
 
-:heart_eyes: **Suggestions and contributions are welcome!** :heart_eyes:
+:heart_eyes: **欢迎提供建议和贡献！** :heart_eyes:
 
-## Important links
+## 重要链接
 
-[What are algorithms and data structures?](What are Algorithms.markdown) Pancakes!
+[什么是算法和数据结构？](What are Algorithms.markdown) 薄饼！
 
-[Why learn algorithms?](Why Algorithms.markdown) Worried this isn't your cup of tea? Then read this.
+[为什么要学习算法？](Why Algorithms.markdown) 还在担心这不是你的菜吗？请读一下这篇文章。
 
-[Big-O notation](Big-O Notation.markdown). We often say things like, "This algorithm is **O(n)**." If you don't know what that means, read this first.
+[Big-O 标记](Big-O Notation.markdown)。 我们经常会听到这样的话：“这个算法是 O(n) 的”。如果你不知道这是啥意思，请读读这篇文章。
 
-[Algorithm design techniques](Algorithm Design.markdown). How do you create your own algorithms?
+[Algorithm design techniques](Algorithm Design.markdown)。 How do you create your own algorithms?
 
-[How to contribute](How to Contribute.markdown). Report an issue to leave feedback, or submit a pull request.
+[算法设计技巧](Algorithm Design.markdown)。 怎样设计自己的算法？
 
-## Where to start?
+[参与进来！](How to Contribute.markdown)。开个 issue 反馈一下你的想法，或者提交一个 pull request。
+
+## 从哪开始？
 
 If you're new to algorithms and data structures, here are a few good ones to start out with:
 
-- [Stack](Stack/)
-- [Queue](Queue/)
-- [Insertion Sort](Insertion Sort/)
-- [Binary Search](Binary Search/) and [Binary Search Tree](Binary Search Tree/)
-- [Merge Sort](Merge Sort/)
-- [Boyer-Moore string search](Boyer-Moore/)
+如果你之前没有接触过算法和数据结构，你可以从下面这些简单易懂的算法开始看起：
 
-## The algorithms
+- [栈(Stack)](Stack/)
+- [队列(Queue)](Queue/)
+- [插入排序(Insertion Sort)](Insertion Sort/)
+- [二分搜索(Binary Search)](Binary Search/) 和 [二分搜索树(Binary Search Tree)](Binary Search Tree/)
+- [归并排序(Merge Sort)](Merge Sort/)
+- [Boyer-Moore字符串搜索算法](Boyer-Moore/)
 
-### Searching
+## 算法列表
 
-- [Linear Search](Linear Search/). Find an element in an array.
-- [Binary Search](Binary Search/). Quickly find elements in a sorted array.
-- [Count Occurrences](Count Occurrences/). Count how often a value appears in an array.
-- [Select Minimum / Maximum](Select Minimum Maximum). Find the minimum/maximum value in an array.
-- [k-th Largest Element](Kth Largest Element/). Find the *k*-th largest element in an array, such as the median.
-- [Selection Sampling](Selection Sampling/). Randomly choose a bunch of items from a collection.
-- [Union-Find](Union-Find/). Keeps track of disjoint sets and lets you quickly merge them.
+### 搜索算法
+
+- [线性搜索(Linear Search)](Linear Search/)。从数组中查找某个元素。
+- [二分搜索(Binary Search)](Binary Search/)。从已排序的数组中快速查找元素。
+- [统计出现次数](Count Occurrences/)。统计某个值在数组中的出现次数。
+- [查找最大／最小值](Select Minimum Maximum)。找到数组中的最大／最小值。
+- [第 K 大元素](Kth Largest Element/)。找到数组中的第 **K** 大元素，例如中位数。
+- [选取样本](Selection Sampling/)。随机地从集合中选取一些元素作为样本。
+- [并查集](Union-Find/)。保持一些不相交的集合，帮助你快速合并它们。
 
 ### String Search
 
