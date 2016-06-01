@@ -16,7 +16,7 @@
 
 ## 重要链接
 
-[*什么是算法和数据结构？](What are Algorithms.markdown)－薄饼！
+[什么是算法和数据结构？](What are Algorithms.markdown)－薄饼！
 
 [*为什么要学习算法？](Why Algorithms.markdown)－还在担心这不是你的菜吗？请读一下这篇文章。
 
