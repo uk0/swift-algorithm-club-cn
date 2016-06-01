@@ -1,5 +1,7 @@
 # 欢迎来到 Swift 算法俱乐部！
 
+> 注：本文译自 [Swift Algorithm Club](https://github.com/raywenderlich/swift-algorithm-club)。
+
 在这里，你可以找到很多流行的算法和数据结构的具体实现，使用的是大家最喜欢的新语言 Swift，并对他们的工作原理配有详细的解释。
 
 如果你是一个计算机学院的学生，为了考试想学习一下算法；又或者你是一个自学成才的程序员，想提高一下自身的理论姿势水平－－你真 TM 来对地方了！
@@ -209,4 +211,4 @@
 
 ## 许可(License)
 
-本项目(包括原项目)都是基于 MIT 协议的，请随意使用！
+本项目(包括[原项目](https://github.com/raywenderlich/swift-algorithm-club))都是基于 MIT 协议的，请随意使用！
