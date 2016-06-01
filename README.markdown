@@ -22,25 +22,25 @@
 
 [算法设计技巧](Algorithm Design.markdown)。 怎样设计自己的算法？
 
-[参与进来！](How to Contribute.markdown)。开个 issue 反馈一下你的想法，或者提交一个 pull request。
+[参与进来！](How to Contribute.markdown)开个 issue 反馈一下你的想法，或者提交一个 pull request。
 
 ## 从哪开始？
 
 如果你之前没有接触过算法和数据结构，你可以从下面这些简单易懂的算法开始看起：
 
-- [栈(Stack)](Stack/)
-- [队列(Queue)](Queue/)
-- [插入排序(Insertion Sort)](Insertion Sort/)
-- [二分搜索(Binary Search)](Binary Search/) 和 [二分搜索树(Binary Search Tree)](Binary Search Tree/)
-- [归并排序(Merge Sort)](Merge Sort/)
-- [Boyer-Moore字符串搜索算法](Boyer-Moore/)
+- [栈](Stack/)
+- [队列](Queue/)
+- [插入排序](Insertion Sort/)
+- [二分搜索](Binary Search/) 和 [二分搜索树](Binary Search Tree/)
+- [归并排序](Merge Sort/)
+- [Boyer-Moore 字符串搜索算法](Boyer-Moore/)
 
 ## 算法列表
 
 ### 搜索算法
 
-- [线性搜索(Linear Search)](Linear Search/)。从数组中查找某个元素。
-- [二分搜索(Binary Search)](Binary Search/)。从已排序的数组中快速查找元素。
+- [线性搜索](Linear Search/)。从数组中查找某个元素。
+- [二分搜索](Binary Search/)。从已排序的数组中快速查找元素。
 - [统计出现次数](Count Occurrences/)。统计某个值在数组中的出现次数。
 - [查找最大／最小值](Select Minimum Maximum)。找到数组中的最大／最小值。
 - [第 K 大元素](Kth Largest Element/)。找到数组中的第 **K** 大元素，例如中位数。
