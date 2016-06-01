@@ -14,15 +14,15 @@
 
 ## 重要链接
 
-[什么是算法和数据结构？](What are Algorithms.markdown) 薄饼！
+[什么是算法和数据结构？](What are Algorithms.markdown)－薄饼！
 
-[为什么要学习算法？](Why Algorithms.markdown) 还在担心这不是你的菜吗？请读一下这篇文章。
+[为什么要学习算法？](Why Algorithms.markdown)－还在担心这不是你的菜吗？请读一下这篇文章。
 
-[Big-O 标记](Big-O Notation.markdown)。 我们经常会听到这样的话：“这个算法是 O(n) 的”。如果你不知道这是啥意思，请读读这篇文章。
+[Big-O 标记](Big-O Notation.markdown)－我们经常会听到这样的话：“这个算法是 O(n) 的”。如果你不知道这是啥意思，请读读这篇文章。
 
-[算法设计技巧](Algorithm Design.markdown)。 怎样设计自己的算法？
+[算法设计技巧](Algorithm Design.markdown)－怎样设计自己的算法？
 
-[参与进来！](How to Contribute.markdown)开个 issue 反馈一下你的想法，或者提交一个 pull request。
+[参与进来！](How to Contribute.markdown)－开个 issue 反馈一下你的想法，或者提交一个 pull request。
 
 ## 从哪开始？
 
@@ -39,20 +39,20 @@
 
 ### 搜索算法
 
-- [线性搜索](Linear Search/)。从数组中查找某个元素。
-- [二分搜索](Binary Search/)。从已排序的数组中快速查找元素。
-- [统计出现次数](Count Occurrences/)。统计某个值在数组中的出现次数。
-- [查找最大／最小值](Select Minimum Maximum)。找到数组中的最大／最小值。
-- [第 K 大元素](Kth Largest Element/)。找到数组中的第 **K** 大元素，例如中位数。
-- [选取样本](Selection Sampling/)。随机地从集合中选取一些元素作为样本。
-- [并查集](Union-Find/)。保持一些不相交的集合，帮助你快速合并它们。
+- [线性搜索](Linear Search/)－从数组中查找某个元素。
+- [二分搜索](Binary Search/)－从已排序的数组中快速查找元素。
+- [统计出现次数](Count Occurrences/)－统计某个值在数组中的出现次数。
+- [查找最大／最小值](Select Minimum Maximum)－找到数组中的最大／最小值。
+- [第 K 大元素](Kth Largest Element/)－找到数组中的第 **K** 大元素，例如中位数。
+- [选取样本](Selection Sampling/)－随机地从集合中选取一些元素作为样本。
+- [并查集](Union-Find/)－保持一些不相交的集合，帮助你快速合并它们。
 
 ### 字符串搜索算法
 
-- [Brute-Force 算法](Brute-Force String Search/)。一个简单粗暴的方法。
-- [Boyer-Moore 算法](Boyer-Moore/)。一种高效的字符串子串搜索算法。它不需要对被搜索的字符串中的字符进行逐一比较，而是根据一个查找表跳过其中的某些部分。
+- [Brute-Force 算法](Brute-Force String Search/)－一个简单粗暴的方法。
+- [Boyer-Moore 算法](Boyer-Moore/)－一种高效的字符串子串搜索算法。它不需要对被搜索的字符串中的字符进行逐一比较，而是根据一个查找表跳过其中的某些部分。
 - Rabin-Karp 算法
-- [最长公共子序列算法](Longest Common Subsequence/)。找到两个字符串中的最长公共子序列。
+- [最长公共子序列算法](Longest Common Subsequence/)－找到两个字符串中的最长公共子序列。
 
 ### 排序算法
 
@@ -88,18 +88,18 @@
 
 ### 杂项
 
-- [搅乱算法](Shuffle/)。随机搅乱数组中的内容。
+- [搅乱算法](Shuffle/)－随机搅乱数组中的内容。
 
 ### 数学向算法
 
-- [最大公约数算法(GCD)](GCD/)。特殊福利：最小公倍数算法。
-- [排列组合算法](Combinatorics/)。还记得高中学过俄组合数学吗？
-- [调度场算法](Shunting Yard/)。用于将中缀表达式转换为后缀表达式的经典算法。
+- [最大公约数算法(GCD)](GCD/)－特殊福利：最小公倍数算法。
+- [排列组合算法](Combinatorics/)－还记得高中学过俄组合数学吗？
+- [调度场算法](Shunting Yard/)－用于将中缀表达式转换为后缀表达式的经典算法。
 - 统计算法
 
 ### 机器学习
 
-- [k-Means 聚类算法](K-Means/)。无监督的分类器，将数据聚类为 K 个簇。
+- [k-Means 聚类算法](K-Means/)－无监督的分类器，将数据聚类为 K 个簇。
 - K-近邻算法
 - 线性回归
 - 逻辑回归
@@ -118,37 +118,37 @@
 
 ### 数组变体
 
-- [二维数组](Array2D/)。固定尺寸的二维数组，可用于棋盘游戏。
-- [比特集](Bit Set/)。**n** 位大小固定尺度的序列。
-- [固定长度数组](Fixed Size Array/)。如果你确切的知道数据的大小，使用老式的固定长度的数组会更加高效。
-- [有序数组](Ordered Array/)。一个永远有序的数组。
+- [二维数组](Array2D/)－固定尺寸的二维数组，可用于棋盘游戏。
+- [比特集](Bit Set/)－**n** 位大小固定尺度的序列。
+- [固定长度数组](Fixed Size Array/)－如果你确切的知道数据的大小，使用老式的固定长度的数组会更加高效。
+- [有序数组](Ordered Array/)－一个永远有序的数组。
 
 ### 队列
 
-- [栈](Stack/)。后进先出！
-- [队列](Queue/)。先进先出！
-- [双端队列](Deque/)。
-- [优先队列](Priority Queue)。一个保持最重要的元素总是在最前面的队列。
-- [有限优先队列](Bounded Priority Queue)。元素最大数受限制的优先队列。 :construction:
-- [环形缓冲区](Ring Buffer/)。一个语义上的固定大小的环形缓冲区，实际使用的是一维序列头尾相接实现。
+- [栈](Stack/)－后进先出！
+- [队列](Queue/)－先进先出！
+- [双端队列](Deque/)
+- [优先队列](Priority Queue)－一个保持最重要的元素总是在最前面的队列。
+- [有限优先队列](Bounded Priority Queue)－元素最大数受限制的优先队列。 :construction:
+- [环形缓冲区](Ring Buffer/)－一个语义上的固定大小的环形缓冲区，实际使用的是一维序列头尾相接实现。
 
 ### 列表
 
-- [链表](Linked List/)。链接起来的数据序列。包含单向和双向链表。
+- [链表](Linked List/)－链接起来的数据序列。包含单向和双向链表。
 - 跳跃列表
 
 ### 树
 
-- [树](Tree/)。通用目的的树形结构。
-- [二叉树](Binary Tree/)。一种节点最多有两个孩子节点的树形结构。
-- [二叉搜索树(BST)](Binary Search Tree/)。以某种方式组织自己的节点的二叉树，以求较快的查询速度。
-- [AVL 树](AVL Tree/)。一种通过旋转来维持平衡的二叉搜索树。 :construction:
+- [树](Tree/)－通用目的的树形结构。
+- [二叉树](Binary Tree/)－一种节点最多有两个孩子节点的树形结构。
+- [二叉搜索树(BST)](Binary Search Tree/)－以某种方式组织自己的节点的二叉树，以求较快的查询速度。
+- [AVL 树](AVL Tree/)－一种通过旋转来维持平衡的二叉搜索树。 :construction:
 - 红黑树
 - 伸展树
 - 线索二叉树
-- [线段树](Segment Tree/)。能够快速地对某区间进行计算。
+- [线段树](Segment Tree/)－能够快速地对某区间进行计算。
 - k-d 树
-- [堆](Heap/)。存储在一维数组中的二叉树，所以它不需要使用指针。很适合做为优先队列使用。
+- [堆](Heap/)－存储在一维数组中的二叉树，所以它不需要使用指针。很适合做为优先队列使用。
 - 斐波那契堆
 - 字典树(Trie)
 - B 树
@@ -156,7 +156,7 @@
 
 ### 哈希
 
-- [哈希表](Hash Table/)。允许你通过一个关键词来存取数据。字典通常都是基于哈希表实现的。
+- [哈希表](Hash Table/)－允许你通过一个关键词来存取数据。字典通常都是基于哈希表实现的。
 - 哈希函数
 
 ### 集合
