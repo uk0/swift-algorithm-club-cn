@@ -20,15 +20,11 @@
 
 [Big-O 标记](Big-O Notation.markdown)。 我们经常会听到这样的话：“这个算法是 O(n) 的”。如果你不知道这是啥意思，请读读这篇文章。
 
-[Algorithm design techniques](Algorithm Design.markdown)。 How do you create your own algorithms?
-
 [算法设计技巧](Algorithm Design.markdown)。 怎样设计自己的算法？
 
 [参与进来！](How to Contribute.markdown)。开个 issue 反馈一下你的想法，或者提交一个 pull request。
 
 ## 从哪开始？
-
-If you're new to algorithms and data structures, here are a few good ones to start out with:
 
 如果你之前没有接触过算法和数据结构，你可以从下面这些简单易懂的算法开始看起：
 
