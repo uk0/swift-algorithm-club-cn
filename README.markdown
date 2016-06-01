@@ -31,7 +31,7 @@
 - [栈](Stack/)
 - [队列](Queue/)
 - [插入排序](Insertion Sort/)
-- [二分搜索](Binary Search/) 和 [二分搜索树](Binary Search Tree/)
+- [二分搜索](Binary Search/)和[二分搜索树](Binary Search Tree/)
 - [归并排序](Merge Sort/)
 - [Boyer-Moore 字符串搜索算法](Boyer-Moore/)
 
@@ -47,39 +47,39 @@
 - [选取样本](Selection Sampling/)。随机地从集合中选取一些元素作为样本。
 - [并查集](Union-Find/)。保持一些不相交的集合，帮助你快速合并它们。
 
-### String Search
+### 字符串搜索算法
 
-- [Brute-Force String Search](Brute-Force String Search/). A naive method.
-- [Boyer-Moore](Boyer-Moore/). A fast method to search for substrings. It skips ahead based on a look-up table, to avoid looking at every character in the text.
-- Rabin-Karp
-- [Longest Common Subsequence](Longest Common Subsequence/). Find the longest sequence of characters that appear in the same order in both strings.
+- [Brute-Force 算法](Brute-Force String Search/)。一个简单粗暴的方法。
+- [Boyer-Moore 算法](Boyer-Moore/)。一种高效的字符串子串搜索算法。它不需要对被搜索的字符串中的字符进行逐一比较，而是根据一个查找表跳过其中的某些部分。
+- Rabin-Karp 算法
+- [最长公共子序列算法](Longest Common Subsequence/)。找到两个字符串中的最长公共子序列。
 
-### Sorting
+### 排序算法
 
-It's fun to see how sorting algorithms work, but in practice you'll almost never have to provide your own sorting routines. Swift's own `sort()` is more than up to the job. But if you're curious, read on...
+探究排序算法的工作原理是非常有趣的，但在实际的编码中，你几乎永远也不会需要自己编写排序算法，Swift 自带的 `sort()` 函数已经非常够用了，但如果你还是好奇背后的原理，请继续阅读。
 
-Basic sorts:
+基本的排序算法：
 
-- [Insertion Sort](Insertion Sort/)
-- [Selection Sort](Selection Sort/)
-- [Shell Sort](Shell Sort/)
+- [插入排序](Insertion Sort/)
+- [选择排序](Selection Sort/)
+- [希尔排序](Shell Sort/)
 
-Fast sorts:
+快速的排序算法：
 
-- [Quicksort](Quicksort/)
-- [Merge Sort](Merge Sort/)
-- [Heap Sort](Heap Sort/)
+- [快速排序](Quicksort/)
+- [归并排序](Merge Sort/)
+- [堆排序](Heap Sort/)
 
-Special-purpose sorts:
+特殊的排序算法
 
-- [Bucket Sort](Bucket Sort/) :construction:
-- [Counting Sort](Counting Sort/)
-- Radix Sort
-- [Topological Sort](Topological Sort/)
+- [桶排序](Bucket Sort/) :construction:
+- [计数排序](Counting Sort/)
+- 基数排序
+- [拓扑排序](Topological Sort/)
 
-Bad sorting algorithms (don't use these!):
+不好的排序算法（知道就行了，不要用！）：
 
-- [Bubble Sort](Bubble Sort/)
+- [冒泡排序](Bubble Sort/)
 
 ### Compression
 
