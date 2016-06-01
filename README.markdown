@@ -10,7 +10,7 @@
 
 这个项目目前正在进行中。更多的算法将被加入，敬请期待。:-)
 
-:heart_eyes: **欢迎提供建议和贡献！** :heart_eyes:
+:heart_eyes:**欢迎提供建议和贡献！**:heart_eyes:
 
 ## 重要链接
 
@@ -125,41 +125,41 @@
 
 ### 队列
 
-- [Stack](Stack/). Last-in, first-out!
-- [Queue](Queue/). First-in, first-out!
-- [Deque](Deque/). A double-ended queue.
-- [Priority Queue](Priority Queue). A queue where the most important element is always at the front.
-- [Bounded Priority Queue](Bounded Priority Queue). A queue that is bounded to have a limited number of elements. :construction:
-- [Ring Buffer](Ring Buffer/). Also known as a circular buffer. An array of a certain size that conceptually wraps around back to the beginning.
+- [栈](Stack/)。后进先出！
+- [队列](Queue/)。先进先出！
+- [双端队列](Deque/)。
+- [优先队列](Priority Queue)。一个保持最重要的元素总是在最前面的队列。
+- [有限优先队列](Bounded Priority Queue)。元素最大数受限制的优先队列。 :construction:
+- [环形缓冲区](Ring Buffer/)。一个语义上的固定大小的环形缓冲区，实际使用的是一维序列头尾相接实现。
 
-### Lists
+### 列表
 
-- [Linked List](Linked List/). A sequence of data items connected through links. Covers both singly and doubly linked lists.
-- Skip List
+- [链表](Linked List/)。链接起来的数据序列。包含单向和双向链表。
+- 跳跃列表
 
-### Trees
+### 树
 
-- [Tree](Tree/). A general-purpose tree structure.
-- [Binary Tree](Binary Tree/). A tree where each node has at most two children.
-- [Binary Search Tree (BST)](Binary Search Tree/). A binary tree that orders its nodes in a way that allows for fast queries.
-- [AVL Tree](AVL Tree/). A binary search tree that balances itself using rotations. :construction:
-- Red-Black Tree
-- Splay Tree
-- Threaded Binary Tree
-- [Segment Tree](Segment Tree/). Can quickly compute a function over a portion of an array.
-- kd-Tree
-- [Heap](Heap/). A binary tree stored in an array, so it doesn't use pointers. Makes a great priority queue.
-- Fibonacci Heap
-- Trie
-- B-Tree
-- [Radix Tree](Radix Tree/) :construction:
+- [树](Tree/)。通用目的的树形结构。
+- [二叉树](Binary Tree/)。一种节点最多有两个孩子节点的树形结构。
+- [二叉搜索树(BST)](Binary Search Tree/)。以某种方式组织自己的节点的二叉树，以求较快的查询速度。
+- [AVL 树](AVL Tree/)。一种通过旋转来维持平衡的二叉搜索树。 :construction:
+- 红黑树
+- 伸展树
+- 线索二叉树
+- [线段树](Segment Tree/)。能够快速地对某区间进行计算。
+- k-d 树
+- [堆](Heap/)。存储在一维数组中的二叉树，所以它不需要使用指针。很适合做为优先队列使用。
+- 斐波那契堆
+- 字典树(Trie)
+- B 树
+- [基数树](Radix Tree/) :construction:
 
-### Hashing
+### 哈希
 
-- [Hash Table](Hash Table/). Allows you to store and retrieve objects by a key. This is how the dictionary type is usually implemented.
-- Hash Functions
+- [哈希表](Hash Table/)。允许你通过一个关键词来存取数据。字典通常都是基于哈希表实现的。
+- 哈希函数
 
-### Sets
+### 集合
 
 - [Bloom Filter](Bloom Filter/). A constant-memory data structure that probabilistically tests whether an element is in a set.
 - [Hash Set](Hash Set/). A set implemented using a hash table.
