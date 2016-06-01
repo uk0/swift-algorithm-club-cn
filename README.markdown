@@ -81,30 +81,30 @@
 
 - [冒泡排序](Bubble Sort/)
 
-### Compression
+### 压缩算法
 
-- [Run-Length Encoding (RLE)](Run-Length Encoding/). Store repeated values as a single byte and a count.
-- [Huffman Coding](Huffman Coding/). Store more common elements using a smaller number of bits.
+- [变动长度编码法(RLE)](Run-Length Encoding/)。将重复的值存储为一个单字节及其计数。
+- [哈夫曼编码](Huffman Coding/)。将常见的元素使用更小的单位存储。
 
-### Miscellaneous
+### 杂项
 
-- [Shuffle](Shuffle/). Randomly rearranges the contents of an array.
+- [搅乱算法](Shuffle/)。随机搅乱数组中的内容。
 
-### Mathematics
+### 数学向算法
 
-- [Greatest Common Divisor (GCD)](GCD/). Special bonus: the least common multiple.
-- [Permutations and Combinations](Combinatorics/). Get your combinatorics on!
-- [Shunting Yard Algorithm](Shunting Yard/). Convert infix expressions to postfix.
-- Statistics
+- [最大公约数算法(GCD)](GCD/)。特殊福利：最小公倍数算法。
+- [排列组合算法](Combinatorics/)。还记得高中学过俄组合数学吗？
+- [调度场算法](Shunting Yard/)。用于将中缀表达式转换为后缀表达式的经典算法。
+- 统计算法
 
-### Machine learning
+### 机器学习
 
-- [k-Means Clustering](K-Means/). Unsupervised classifier that partitions data into *k* clusters.
-- k-Nearest Neighbors
-- Linear Regression
-- Logistic Regression
-- Neural Networks
-- PageRank
+- [k-Means 聚类算法](K-Means/)。无监督的分类器，将数据聚类为 K 个簇。
+- K-近邻算法
+- 线性回归
+- 逻辑回归
+- 神经网络
+- 网页排名算法
 
 ## Data structures
 
