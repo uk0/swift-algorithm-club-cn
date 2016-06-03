@@ -1,5 +1,7 @@
 # Algorithm design techniques
 
+> 译注：原文待更新，暂时不翻译
+
 What to do when you're faced with a new problem and you need to find an algorithm for it.
 
 ### Is it similar to another problem?
