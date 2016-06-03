@@ -1,6 +1,6 @@
 # 怎样参与到本项目？
 
-> 注：下面主要介绍如何参与翻译，如果你需要知道怎样提交一个新的算法，请去左转原项目阅读他们的[要求](https://github.com/raywenderlich/swift-algorithm-club/blob/master/How%20to%20Contribute.markdown)。
+> 注：下面主要介绍如何参与翻译，如果你想知道怎样提交一个新的算法，请出门左转去原项目阅读他们的[要求](https://github.com/raywenderlich/swift-algorithm-club/blob/master/How%20to%20Contribute.markdown)。
 
 你可以通过以下方式参与进来：
 
