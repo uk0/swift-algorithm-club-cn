@@ -24,7 +24,7 @@
 
 [*算法设计技巧](Algorithm Design.markdown)－怎样设计自己的算法？
 
-[参与翻译！](How to Contribute.markdown)
+[欢迎参与翻译！](How to Contribute.markdown)－如果有意参与翻译，请阅读注意事项！
 
 ## 从哪开始？
 
