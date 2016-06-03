@@ -18,7 +18,7 @@
 
 [什么是算法和数据结构？](What are Algorithms.markdown)－薄饼！
 
-[*为什么要学习算法？](Why Algorithms.markdown)－还在担心这不是你的菜吗？请读一下这篇文章。
+[为什么要学习算法？](Why Algorithms.markdown)－还在担心这不是你的菜吗？请读一下这篇文章。
 
 [大 O 表示法](Big-O Notation.markdown)－我们经常会听到这样的话：“这个算法是 O(n) 的”。如果你不知道这是啥意思，请读读这篇文章。
 
