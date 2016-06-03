@@ -30,7 +30,7 @@
 
 如果你之前没有接触过算法和数据结构，你可以从下面这些简单易懂的算法开始看起：
 
-- [*栈](Stack/)
+- [栈](Stack/)
 - [*队列](Queue/)
 - [*插入排序](Insertion Sort/)
 - [*二分搜索](Binary Search/)和[*二分搜索树](Binary Search Tree/)
