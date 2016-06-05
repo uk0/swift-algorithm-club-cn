@@ -1,44 +1,44 @@
-# Queue
+# 队列
 
-A queue is a list where you can only insert new items at the back and remove items from the front. This ensures that the first item you enqueue is also the first item you dequeue. First come, first serve!
+队列的本质是一个数组，但只能从队尾添加元素，从队首移除元素。这保证了第一个入队的元素总是第一个出队。先到先得！
 
-Why would you need this? Well, in many algorithms you want to add objects to a temporary list at some point and then pull them off this list again at a later time. Often the order in which you add and remove these objects matters.
+为什么要这样做呢？在很多算法的实现中，你可能需要将某些对象放到一个临时的列表中，之后再将其取出。通常加入和取出元素的顺序非常重要。
 
-A queue gives you a FIFO or first-in, first-out order. The element you inserted first is also the first one to come out again. It's only fair! (A very similar data structure, the [stack](../Stack/), is LIFO or last-in first-out.)
+队列可以保证元素存入和取出的顺序是先进先出(first-in first-out, FIFO)的，第一个入队的元素总是第一个出队，公平合理！另外一个非常类似的数据结构是[栈](../Stack/)，它是一个后进先出(last-in, first-out, LIFO)的结构。
 
-For example, let's enqueue a number:
+举例来说，我们将一个数字入队：
 
 ```swift
 queue.enqueue(10)
 ```
 
-The queue is now `[ 10 ]`. Add the next number to the queue:
+队列现在为 `[ 10 ]`。再将下一个数字入队：
 
 ```swift
 queue.enqueue(3)
 ```
 
-The queue is now `[ 10, 3 ]`. Add one more number:
+队列现在为 `[ 10, 3 ]`。再加入一个数字：
 
 ```swift
 queue.enqueue(57)
 ```
 
-The queue is now `[ 10, 3, 57 ]`. Let's dequeue to pull the first element off the front of the queue:
+队列现在为 `[ 10, 3, 57 ]`。现在我们将第一个元素出队：
 
 ```swift
 queue.dequeue()
 ```
 
-This returns `10` because that was the first number we inserted. The queue is now `[ 3, 57 ]`. Everyone moved up by one place.
+这条语句返回数字 `10`，因为这是我们入队的第一个元素。队列现在是 `[ 3, 57 ]`。剩下的元素都往前移动一位。
 
 ```swift
 queue.dequeue()
 ```
 
-This returns `3`, the next dequeue returns `57`, and so on. If the queue is empty, dequeuing returns `nil` or in some implementations it gives an error message.
+这条语句返回 `3`，下次调用 `dequeue` 将返回 `57`，以此类推。如果队列为空，出队操作将返回 `nil`，在有些实现中，会触发一个错误信息。
 
-> **Note:** A queue is not always the best choice. If the order in which the items are added and removed from the list isn't important, you might as well use a [stack](../Stack/) instead of a queue. Stacks are simpler and faster.
+> **注意：**队列并不总是最好的选择，如果加入和删除元素的顺序无所谓的话，你可以选择使用[栈](../Stack/)来达到目的。栈更加简单快速。
 
 ## The code
 
