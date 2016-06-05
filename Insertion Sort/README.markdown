@@ -1,8 +1,8 @@
-# Insertion Sort
+# 插入排序
 
-Goal: Sort an array from low to high (or high to low).
+目标：将一个数组按照从低到高（或从高到低）来排序。
 
-You are given an array of numbers and need to put them in the right order. The insertion sort algorithm works as follows:
+现有一个数字类型的数组需要进行排序，插入排序的工作方式如下：
 
 - Put the numbers on a pile. This pile is unsorted.
 - Pick a number from the pile. It doesn't really matter which one you pick, but it's easiest to pick from the top of the pile. 
