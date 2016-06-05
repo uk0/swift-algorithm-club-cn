@@ -40,9 +40,9 @@ queue.dequeue()
 
 > **注意：**队列并不总是最好的选择，如果加入和删除元素的顺序无所谓的话，你可以选择使用[栈](../Stack/)来达到目的。栈更加简单快速。
 
-## The code
+## 实现代码
 
-Here is a very simplistic implementation of a queue in Swift. It's just a wrapper around an array that lets you enqueue, dequeue, and peek at the front-most item:
+下面给出了一个简单粗暴的队列实现。它只是简单的包装了一下自带的数组，并暴露出入队(enqueue)、出队(dequeue)和取得队首元素(peek)三个操作：
 
 ```swift
 public struct Queue<T> {
@@ -74,11 +74,11 @@ public struct Queue<T> {
 }
 ```
 
-This queue works just fine but it is not optimal.
+上面实现的队列只是可以正常工作，但并没有任何的优化。
 
-Enqueuing is an **O(1)** operation because adding to the end of an array always takes the same amount of time, regardless of the size of the array. So that's great.
+入队操作的时间复杂度为 **O(1)**，因为在数组的尾部添加元素只需要固定的时间，跟数组的大小无关。很好。
 
-You might be wondering why appending items to an array is **O(1)**, or a constant-time operation. That is so because an array in Swift always has some empty space at the end. If we do the following:
+你可能会好奇为什么在数组尾部添加元素的时间复杂度为 **O(1)**，或者说只需要固定的时间。这是因为在 Swift 的内部实现中，数组的尾部总是有一些预设的空间可供使用。如果我们进行如下操作：
 
 ```swift
 var queue = Queue<String>()
@@ -87,32 +87,32 @@ queue.enqueue("Steve")
 queue.enqueue("Tim")
 ```
 
-then the array might actually look like this:
+则数组可能看起来想下面这样
 
 	[ "Ada", "Steve", "Tim", xxx, xxx, xxx ]
 
-where `xxx` is memory that is reserved but not filled in yet. Adding a new element to the array overwrites the next unused spot:
+`xxx` 代表已经申请，但还没有使用的内存。在尾部添加一个新的元素就会用到下一块未被使用的内存：
 
 	[ "Ada", "Steve", "Tim", "Grace", xxx, xxx ]
 
-This is simply matter of copying memory from one place to another, a constant-time operation.
+这只是简单的拷贝内存的工作，只需要固定的常量时间。
 
-Of course, there are only a limited number of such unused spots at the end of the array. When the last `xxx` gets used and you want to add another item, the array needs to resize to make more room.
+当然，数组尾部的未使用内存的大小是有限的，如果最后一块未使用内存也被占用的时候，再添加元素会使得数组重新调整大小来获取更多的空间。
 
-Resizing includes allocating new memory and copying all the existing data over to the new array. This is an **O(n)** process, so it's relatively slow. But since it happens only every so often, the time for appending a new element to the end of the array is still **O(1)** on average, or **O(1)** "amortized".
+重新调整的过程包括申请新的内存，将已有数据迁移到新内存中。这个操作的时间复杂度是 **O(n)**，所以是一个较慢的操作。但考虑到这种情况并不常见，所以，这个操作的时间复杂度依然是 **O(1)** 的，或者说是近似 **O(1)** 的。
 
-The story for dequeueing is slightly different. To dequeue we remove the element from the *beginning* of the array, not the end. This is always an **O(n)** operation because it requires all remaining array elements to be shifted in memory.
+但出队操作就有点不一样了。出队操作是将数组头部的元素移除，而不是尾部。这个操作的时间复杂度永远都是 **O(n)**，因为这会导致内存的移位操作。
 
-In our example, dequeuing the first element `"Ada"` copies `"Steve"` in the place of `"Ada"`, `"Tim"` in the place of `"Steve"`, and `"Grace"` in the place of `"Tim"`:
+在我们的例子中，将 `"Ada"` 出队会使得 `"Steve"` 接替 `"Ada"` 的位置；`"Tim"` 接替 `"Steve"` 的位置；`"Grace"` 接替 `"Tim"` 的位置：
 
-	before   [ "Ada", "Steve", "Tim", "Grace", xxx, xxx ]
+	出队前   [ "Ada", "Steve", "Tim", "Grace", xxx, xxx ]
 	                   /       /      /
 	                  /       /      /
 	                 /       /      /
 	                /       /      /
-	 after   [ "Steve", "Tim", "Grace", xxx, xxx, xxx ]
+	出队后   [ "Steve", "Tim", "Grace", xxx, xxx, xxx ]
  
-Moving all these elements in memory is always an **O(n)** operation. So with our simple implementation of a queue, enqueuing is efficient but dequeueing leaves something to be desired...
+在内存中移动这些元素的时间复杂度永远都是 **O(n)**，所以我们实现的简单队列对于入队操作的效率是很高的，但对于出队操作的效率却较为低下。
 
 ## A more efficient queue
 
