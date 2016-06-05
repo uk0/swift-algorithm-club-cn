@@ -42,7 +42,7 @@ queue.dequeue()
 
 ## 实现代码
 
-下面给出了一个简单粗暴的队列实现。它只是简单的包装了一下自带的数组，并暴露出入队(enqueue)、出队(dequeue)和取得队首元素(peek)三个操作：
+下面给出了一个简单粗暴的队列实现。它只是简单地包装了一下自带的数组，并提供了入队(enqueue)、出队(dequeue)和取得队首元素(peek)三个操作：
 
 ```swift
 public struct Queue<T> {
@@ -178,21 +178,21 @@ public struct Queue<T> {
 
 现在数组存储的元素类型是 `T?`，而不是先前的 `T`，因为我们需要某种方式来将数组的元素标记为空。`head` 变量用于存储队首元素的下标值。
 
-Most of the new functionality sits in `dequeue()`. When we dequeue an item, we first set `array[head]` to `nil` to remove the object from the array. Then we increment `head` because now the next item has become the front one.
+绝大多数的改进都是针对 `dequeue()` 函数，在将队首元素出队时，我们首先将 `array[head]` 设置为 `nil` 来将这个元素从数组中移除。然后将 `head` 的值加一，使得下一个元素变成新的队首。
 
-We go from this:
+数组从这样：
 
 	[ "Ada", "Steve", "Tim", "Grace", xxx, xxx ]
 	  head
 
-to this:
+变成这样：
 
 	[ xxx, "Steve", "Tim", "Grace", xxx, xxx ]
 	        head
 
-It's like some weird supermarket where the people in the checkout lane don't shuffle forward towards the cash register, but the cash register moves up the queue.
+这就像在某个外星球的奇怪超市，在那里排队结账的人保持不动，而收银员往队尾移动来挨个结账。
 
-Of course, if we never remove those empty spots at the front then the array will keep growing as we enqueue and dequeue elements. To periodically trim down the array, we do the following:
+当然，如果我们从不移除队首的空位，随着不断地入队和出队，队列所占空间将不断增长。为了周期性地清理无用空间，我们编写了如下代码：
 
 ```swift
     let percentage = Double(head)/Double(array.count)
@@ -202,11 +202,13 @@ Of course, if we never remove those empty spots at the front then the array will
     }
 ```
 
-This calculates the percentage of empty spots at the beginning as a ratio of the total array size. If more than 25% of the array is unused, we chop off that wasted space. However, if the array is small we don't want to resize it all the time, so there must be at least 50 elements in the array before we try to trim it. 
+这段代码计算了队首空余的元素占数组总元素的百分比，如果空余元素超过 25%，我们就进行一波清理。但是，如果队列的长度过小，我们也不想频繁地清理空间，所以在清理空间之前，队列中至少要有 50 个元素。
 
-> **Note:** I just pulled these numbers out of thin air -- you may need to tweak them based on the behavior of your app in a production environment.
+> **注意：**这个 50 只是我凭空捏造的一个数字，在实际的项目中，你应该根据项目本身来选定一个合情合理的值。
 
 To test this in a playground, do:
+
+如果想在 Playground 中测试，可以参考下面的代码：
 
 ```swift
 var q = Queue<String>()
@@ -231,19 +233,19 @@ q.array             // [nil, nil, {Some "Tim"}, {Some "Grace"}]
 q.count             // 2
 ```
 
-To test the trimming behavior, replace the line,
+为了测试队列的自动调整特性，将下面这段代码：
 
 ```swift
     if array.count > 50 && percentage > 0.25 {
 ```
 
-with:
+替换为：
 
 ```swift
     if head > 2 {
 ```
 
-Now if you dequeue another object, the array will look as follows:
+现在，如果你再次执行出队操作，数组将看起来像下面这样：
 
 ```swift
 q.dequeue()         // "Tim"
@@ -251,12 +253,12 @@ q.array             // [{Some "Grace"}]
 q.count             // 1
 ```
 
-The `nil` objects at the front have been removed and the array is no longer wasting space. This new version of `Queue` isn't much more complicated than the first one but dequeuing is now also an **O(1)** operation, just because we were a bit smarter about how we used the array.
+在数组前面的 `nil` 已经被移除了，数组本身也没有空间浪费了。新版本的队列实现并没有比初版复杂很多，但现在出队操作的复杂度已经从当初的 **O(n)** 变为了现在的 **O(1)**，只是因为我们在数组的使用策略上耍了一点小心机。
 
-## See also
+## 扩展阅读
 
-There are many other ways to create a queue. Alternative implementations use a [linked list](../Linked List/), a [circular buffer](../Ring Buffer/), or a [heap](../Heap/). 
+事实上，队列还有很多种其他的实现方式，例如可以使用[链表](../Linked List/)、[环形缓冲区](../Ring Buffer/)或是[堆](../Heap/)来实现。
 
-Variations on this theme are [deque](../Deque/), a double-ended queue where you can enqueue and dequeue at both ends, and [priority queue](../Priority Queue/), a sorted queue where the "most important" item is always at the front.
+队列有很多变体，包括[双端队列](../Deque/)，一个两端都可以出队和入队的队列；[优先队列](../Priority Queue/)，一个有序的队列，最重要的元素排在队首。
 
-*Written for Swift Algorithm Club by Matthijs Hollemans*
+*作者：Matthijs Hollemans；译者：KSCO*
