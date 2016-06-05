@@ -114,25 +114,25 @@ queue.enqueue("Tim")
  
 在内存中移动这些元素的时间复杂度永远都是 **O(n)**，所以我们实现的简单队列对于入队操作的效率是很高的，但对于出队操作的效率却较为低下。
 
-## A more efficient queue
+## 更加高效的队列
 
-To make dequeuing more efficient, we can use the same trick of reserving some extra free space, but this time do it at the front of the array. We're going to have to write this code ourselves as the built-in Swift array doesn't support this out of the box.
+为了让队列的出队操作更加高效，我们可以使用和入队所用的相同小技巧，保留一些额外的空间，只不过这次是在队首而不是队尾。这次我们需要手动编码实现这个想法，因为 Swift 内建数组并没有提供这种机制。
 
-The idea is as follows: whenever we dequeue an item, we don't shift the contents of the array to the front (slow) but mark the item's position in the array as empty (fast). After dequeuing `"Ada"`, the array is:
+我们的想法如下：每当我们将一个元素出队，我们不再将剩下的元素向前移位（慢），而是将其标记为空（快）。在将 `"Ada"` 出队后，数组如下：
 
 	[ xxx, "Steve", "Tim", "Grace", xxx, xxx ]
 
-After dequeuing `"Steve"`, the array is:
+`"Steve"` 出队后，数组如下：
 
 	[ xxx, xxx, "Tim", "Grace", xxx, xxx ]
 
-These empty spots at the front never get reused for anything, so they're wasting space. Every so often you can trim the array by moving the remaining elements to the front again:
+这些在前端空出来的位子永远都不会再次使用，所以这是些被浪费的空间。解决方法是将剩下的元素往前移动来填补这些空位：
 
 	[ "Tim", "Grace", xxx, xxx, xxx, xxx ]
 
-This trimming procedure involves shifting memory so it's an **O(n)** operation. But because it only happens once in a while, dequeuing is now **O(1)** on average.
+这就需要移动内存，所以这是一个 **O(n)** 操作，但因为这个操作只是偶尔发生，所以出队操作平均时间复杂度为 **O(1)**
 
-Here is how you could implement this version of `Queue`:
+下面给出了改进版的队列的时间方式：
 
 ```swift
 public struct Queue<T> {
@@ -176,7 +176,7 @@ public struct Queue<T> {
 }
 ```
 
-The array now stores objects of type `T?` instead of just `T` because we need some way to mark array elements as being empty. The `head` variable is the index in the array of the front-most object.
+现在数组存储的元素类型是 `T?`，而不是先前的 `T`，因为我们需要某种方式来将数组的元素标记为空。`head` 变量用于存储队首元素的下标值。
 
 Most of the new functionality sits in `dequeue()`. When we dequeue an item, we first set `array[head]` to `nil` to remove the object from the array. Then we increment `head` because now the next item has become the front one.
 
