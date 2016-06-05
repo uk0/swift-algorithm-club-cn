@@ -31,7 +31,7 @@
 如果你之前没有接触过算法和数据结构，你可以从下面这些简单易懂的算法开始看起：
 
 - [栈](Stack/)
-- [*队列](Queue/)
+- [队列](Queue/)
 - [*插入排序](Insertion Sort/)
 - [*二分搜索](Binary Search/)和[*二分搜索树](Binary Search Tree/)
 - [*归并排序](Merge Sort/)
@@ -127,8 +127,8 @@
 
 ### 队列
 
-- [*栈](Stack/)－后进先出！
-- [*队列](Queue/)－先进先出！
+- [栈](Stack/)－后进先出！
+- [队列](Queue/)－先进先出！
 - [*双端队列](Deque/)
 - [*优先队列](Priority Queue)－一个保持最重要的元素总是在最前面的队列。
 - [*有限优先队列](Bounded Priority Queue)－元素最大数受限制的优先队列。 :construction:
