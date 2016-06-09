@@ -4,26 +4,26 @@
 
 现有一个数字类型的数组需要进行排序，插入排序的工作方式如下：
 
-- Put the numbers on a pile. This pile is unsorted.
-- Pick a number from the pile. It doesn't really matter which one you pick, but it's easiest to pick from the top of the pile. 
-- Insert this number into a new array. 
-- Pick the next number from the unsorted pile and also insert that into the new array. It either goes before or after the first number you picked, so that now these two numbers are sorted.
-- Again, pick the next number from the pile and insert it into the array in the proper sorted position.
-- Keep doing this until there are no more numbers on the pile. You end up with an empty pile and an array that is sorted.
+- 首先，将这些待排序的数字放在一个数组中，成为未排序的原始数组。
+- 从其中取出一个数字，具体取哪个无所谓。为简单起见，每次都直接取出第一个元素。
+- 将这个数字插入到一个新的已排序数组中。
+- 然后再次从未排序数组中取出一个数字，将其插入到已排序数组中。它要么插在第一个元素的前面，要么插在后面，来保证这两个数字是有序的。
+- 再一次从未排序数组中取出一个元素，安插在新数组的合适位置，以求新数组依然有序。
+- 一直这样做下去，直到未排序数组中没有数字了为止。这样就可以达到排序的目的了。
 
-That's why this is called an "insertion" sort, because you take a number from the pile and insert it in the array in its proper sorted position. 
+这就是算法叫“插入”排序的原因，因为排序过程中不断地从未排序数组中取出元素插入到已排序的目标数组。
 
-## An example
+## 举例
 
-Let's say the numbers to sort are `[ 8, 3, 5, 4, 6 ]`. This is our unsorted pile.
+例如，待排序的数组为 `[ 8, 3, 5, 4, 6 ]`。
 
-Pick the first number, `8`, and insert it into the new array. There is nothing in that array yet, so that's easy. The sorted array is now `[ 8 ]` and the pile is `[ 3, 5, 4, 6 ]`.
+取出第一个数字 `8`，将它插入到已排序数组中。已排序数组目前还是空的，所以这个过程非常简单。已排序数组现在为 `[ 8 ]`，未排序数组为 `[ 3, 5, 4, 6 ]`。
 
-Pick the next number from the pile, `3`, and insert it into the sorted array. It should go before the `8`, so the sorted array is now `[ 3, 8 ]` and the pile is reduced to `[ 5, 4, 6 ]`.
+取出下一个数字 `3`，将其插入到已排序数组。他应该在 `8` 的前面，所以已排序数组现在为 `[ 3, 8 ]`，未排序数组缩减为 `[ 5, 4, 6 ]`
 
-Pick the next number from the pile, `5`, and insert it into the sorted array. It goes in between the `3` and `8`. The sorted array is `[ 3, 5, 8 ]` and the pile is `[ 4, 6 ]`.
+取出下一个数字 `5`，将其插入到已排序数组中。它应该在 `3` 和 `8` 之间。所以，现在已排序数组为 `[ 3, 5, 8]`,未排序数组为 `[ 4, 6 ]`。
 
-Repeat this process until the pile is empty.
+重复以上过程，直到未排序数组为空为止。
 
 ## In-place sort
 
