@@ -25,25 +25,25 @@
 
 重复以上过程，直到未排序数组为空为止。
 
-## In-place sort
+## 原地排序
 
-The above explanation makes it seem like you need two arrays: one for the unsorted pile and one that contains the numbers in sorted order.
+根据上面的解释，排序过程中似乎使用了两个数组，一个用于存放未排序的的元素，另一个存放已排序的元素。
 
-But you can perform the insertion sort *in-place*, without having to create a separate array. You just keep track of which part of the array is sorted already and which part is the unsorted pile.
+但实际上插入排序可以“原地”进行，无需再创建另一个数组。只需要标记好哪部分是未排序的，哪部分是已排序的即可。
 
-Initially, the array is `[ 8, 3, 5, 4, 6 ]`. The `|` bar shows where the sorted portion ends and the pile begins:
+初始数组为 `[ 8, 3, 5, 4, 6 ]`。我们使用 `|` 符号来分隔已排序和未排序部分：
 
 	[| 8, 3, 5, 4, 6 ]
 
-This shows that the sorted portion is empty and the pile starts at `8`.
+上图显示已排序部分为空，未排序部分的第一个数字为 `8`。
 
-After processing the first number, we have:
+处理完第一个数字之后，数组如下所示：
 
 	[ 8 | 3, 5, 4, 6 ]
 
-The sorted portion is `[ 8 ]` and the pile is `[ 3, 5, 4, 6 ]`. The `|` bar has shifted one position to the right.
+目前，已排序的部分为 `[ 8 ]`，未排序的部分为 `[ 3, 5, 4, 6 ]`。分隔符 `|` 向右位移了一个单位。
 
-This is how the content of the array changes during the sort:
+下面列出了排序过程中数组内容的变化：
 
 	[| 8, 3, 5, 4, 6 ]
 	[ 8 | 3, 5, 4, 6 ]
@@ -52,7 +52,7 @@ This is how the content of the array changes during the sort:
 	[ 3, 4, 5, 8 | 6 ]
 	[ 3, 4, 5, 6, 8 |]
 
-In each step, the `|` bar moves up one position. As you can see, the beginning of the array up to the `|` is always sorted. The pile shrinks by one and the sorted portion grows by one, until the pile is empty and there are no more unsorted numbers left.
+每一步分隔符 `|` 都向右位移一个单位。可以观察到，数组开头到分隔符之间的部分总是已排序的。未排序部分每减少一个元素，已排序部分就增加一个，直到未排序元素为空为止。
 
 ## How to insert
 
