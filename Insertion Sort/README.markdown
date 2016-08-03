@@ -13,6 +13,8 @@
 
 这就是算法叫“插入”排序的原因，因为排序过程中不断地从未排序数组中取出元素插入到已排序的目标数组。
 
+*译者注：类似于打牌的时候抓牌的过程！*
+
 ## 举例
 
 例如，待排序的数组为 `[ 8, 3, 5, 4, 6 ]`。
@@ -54,36 +56,36 @@
 
 每一步分隔符 `|` 都向右位移一个单位。可以观察到，数组开头到分隔符之间的部分总是已排序的。未排序部分每减少一个元素，已排序部分就增加一个，直到未排序元素为空为止。
 
-## How to insert
+## 如何插入
 
-At each step you pick the top-most number from the unsorted pile and insert it into the sorted portion of the array. You must put that number in the proper place so that the beginning of the array remains sorted. How does that work?
+每个周期开始，取出未排序数组的头部元素，将其插入到已排序数组中。这时候，必须要保证元素被插入到了正确的位置。怎么做呢？
 
-Let's say we've already done the first few elements and the array looks like this:
+现在假设已经完成了前面几个元素的排序，数组看起来像下面这样：
 
 	[ 3, 5, 8 | 4, 6 ]
 
-The next number to sort is `4`. We need to insert that into the sorted portion `[ 3, 5, 8 ]` somewhere. 
+下一个待排序的数字是 `4`。我们要做的就是将其插入到已排序数组 `[ 3, 5, 8 ]` 的某个位置。
 
-Here's one way to do this: Look at the previous element, `8`. 
+下面提供了一个实现思路：跟前面的元素 `8` 进行比较。
 
 	[ 3, 5, 8, 4 | 6 ]
 	        ^
 	        
-Is this greater than `4`? Yes it is, so the `4` should come before the `8`. We swap these two numbers to get:
+它比 `4` 大吗？是的，所以 `4` 应该放到 `8` 的前面去。我们将两个数字交换位置来达到目的：
 
 	[ 3, 5, 4, 8 | 6 ]
 	        <-->
-	       swapped
+	       已交换
 
-We're not done yet. The new previous element, `5`, is also greater than `4`. We also swap these two numbers:
+至此还没有结束。交换之后，新的排在前面的元素 `5` 也比 `4` 大。我们如法炮制，也将这两个数字交换位置：
 
 	[ 3, 4, 5, 8 | 6 ]
 	     <-->
-	    swapped
+	    已交换
 
-Again, look at the previous element. Is `3` greater than `4`? No, it is not. That means we're done with number `4`. The beginning of the array is sorted again.
+继续，再次检查排在前面的新元素 `3`，它比 `4` 大吗？不，它必 `4` 小，这就意味着 `4` 已经在正确的位置上了。已排序的数组也再次变得有序了。
 
-This was a description of the inner loop of the insertion sort algorithm, which you'll see in the next section. It inserts the number from the top of the pile into the sorted portion by swapping numbers.
+这就是插入排序算法的内循环的文字描述了，具体的代码在下一节给出。通过交换数字的方式，我们将待排序的元素移动到了已排序数组的正确位置上。
 
 ## The code
 
